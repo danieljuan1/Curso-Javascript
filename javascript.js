@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    document.getElementById("img").addEventListener("mouseover",cambiar, false);
+});
+
+function cambiar(){
+    $("img").attr("src","Captura.PNG");
+}
+
 function diaActual(){
     var hoy=new Date();
     document.write(hoy.toDateString());
@@ -22,3 +30,4 @@ window.onload=mapa;
 
 var anuncio=document.getElementsByClassName("anuncio");
 anuncio.innerHTML="VENDE";
+

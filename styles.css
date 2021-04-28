@@ -177,6 +177,19 @@ h2{
 
 #menu li a:hover{
     font-weight: bold;
-    background-color: gray;
+    background-color: rgb(199, 194, 194);
+}
+
+#ejVentanasEmergentes{
+    margin: 30px 50px 70px 50px;
+    background-color: rgb(165, 161, 161);
+    padding: 20px;
+    height: 110px;
+    border: dashed 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cuerpoSesion{
+    background-color: rgb(138, 151, 175);
 }
 
