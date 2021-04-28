@@ -1,0 +1,182 @@
+body{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cuerpo{
+    width: 100%;
+    position: relative;
+    border: solid;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+#pruebaImagen{
+    background-color: chartreuse;
+    padding: 5px;
+    height: 600px;
+    width: 500px;
+    display: inline-block;
+    margin-left: 80px;
+    position: relative;
+}
+
+#imagen{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 100px 10px 0 60px;
+}
+
+.fecha{
+    background-color: crimson;
+}
+
+
+header{
+    background-color: cadetblue;
+}
+
+.menu {
+    background-color: rgb(168, 220, 236);
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.menu li a:hover{
+    font-weight: bold;
+    background-color:rgb(100, 159, 161);
+}
+
+#barraLateral{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin:15px 20px 15px 0;
+    background-color: grey;
+}
+
+#barraLateral #hBarraLateral{
+    text-align: center;
+}
+
+
+.aside{
+    float: right;
+    width: 200px;
+    height: 703px;
+    margin: 15px 0 15px 5px;
+    background-color: blue;
+}
+
+
+.articulos{
+    margin-top: 50px;
+}
+
+.articulo1{
+    background-color: chocolate;
+    margin-top: 4%;
+    margin-right: 20px;
+    margin-top: 100px;
+    display: inline-block;
+    width: 400px;
+}
+
+.articulo2{
+    background-color: chartreuse;
+    margin-left: 20px;
+    display: inline-block;
+    width: 400px;
+}
+
+.pie{
+    background-color: blueviolet;
+    margin-top: 5%;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+}
+
+.anuncio{
+    width: 250px;
+    height: 250px;
+    background-color:black;
+    color: azure;
+}
+
+.micontenedor{
+    background-color: burlywood;
+}
+
+#sustitucion{
+    background-color: cadetblue;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}
+
+#formulario{
+    background-color: coral;
+}
+
+#resaltado{
+    color: crimson;
+    background-color: cyan;
+}
+
+h2{
+    font-weight: bold;
+    border: dashed;
+    padding: 5px;
+    text-align: center;
+}
+
+.linkdestacacursos{
+    background-color: red;
+    display: block;
+    margin: 10px;
+}
+
+#menu{
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0;
+    width: 185px;
+    border-bottom: dashed 1px black;
+}
+
+#menu li a{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: dashed 1px black;
+    padding: 7px 5px;
+    display: block;
+    text-align: center;
+    background-color: rgb(156, 151, 151);
+    border-bottom: none;
+}
+
+#menu li a:hover{
+    font-weight: bold;
+    background-color: gray;
+}
+

@@ -1,0 +1,189 @@
+<head>
+    <meta charset="UTF-8">
+    <html lang="es">
+    <title>EnZona</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="cuerpo">
+        <header>
+            <h1>EnZona</h1>
+            <div class="menu">
+                <nav>         
+                    <ul>
+                        <li><a href="#">Principal</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Sesion</a></li>
+                        <li><a href="#">Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="barraLateral">
+            <h2 id="hBarraLateral">Barra Lateral</h2>
+            <ul>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel.</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel.</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel.</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel.</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel.</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel.</p></li>
+            </ul>
+        </div>
+
+        <div class="aside">
+            <aside>
+                <h2>Titulo de aside</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam officiis, illum aperiam pariatur autem expedita!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ullam! Sed saepe magni quasi, sunt deleniti, consequatur porro corrupti natus exercitationem nobis animi necessitatibus repellendus aut omnis illo aspernatur sint!</p>
+            </aside>
+        </div>
+
+        <div class="fecha">
+                <p class="fecha">Date: <script>diaActual();</script></p>
+        </div>
+
+        <div id="pruebaImagen">
+            <figure>
+                <h2>Prueba en la que al dar click al mapa se agrega al carrito.</h2>
+                <img src="C:\Users\Admin\Desktop\javascript/Captura.PNG" 
+                    alt="imagen de mexico  y parte de sudamerica" id="imagen">
+            </figure>
+        </div>
+    </br>
+            <div class="saludo">
+                <button onclick="aviso();">Saludo</button> </br> </br>
+            </div>
+
+        <div class="articulos">
+            <article class="articulo1">
+                <h2>Titulo de articulo 1</h2>
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Autem eius deserunt quae cupiditate atque laborum provident facilis ipsam quo ipsa?</p> 
+            </article>
+            <article class="articulo2">
+                <h2>Titulo de articulo 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore adipisci distinctio harum possimus commodi!</p>
+            </article>
+        </div>
+
+ 
+        <div class="anuncio">
+            <h2>Prueba sobre el cambio de texto de un anuncio con JQUERY</h2>
+            COMPRA
+        </div>
+
+
+        <h2>Primeras pruebas con JQUERY, utilizando funciones.</h2>
+        <script>
+        
+        $(document).ready(function(){
+        //alert($("#errores h2").html());
+        $("#errores").append("<p> Estoy usando la funcion append con jquery </p>");
+        $("#errores").prepend("<p> Estoy usando la funcion prepend con jquery </p>");
+        $("#errores").after("<p> Estoy usando la funcion after con jquery </p>");
+        $("#errores").before("<p> Estoy usando la funcion before con jquery </p>");
+        $("#errores h2").text("Estoy usando la funcion text con jquery");
+    })
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                document.getElementById("imagen").addEventListener("click", carrito, false);
+            })
+
+            function carrito(){
+                $("#imagen").replaceWith(" <div id='sustitucion'> se ha agregado al carrito </div> ");
+            }
+        </script>
+
+        <div id="contenedor">
+            <div id="errores" class="micontenedor">
+                <h2>Errores</h2>
+            </div>
+        </div>
+
+        <script>
+            function validar(){
+                var nombreUSuario,contraseña,correo
+                nombreUsuario=document.getElementById("usuario").value;
+                if(nombreUsuario == ""){
+                    $("#usuario").after(" Ingresa tu nombre de usuario");
+                }
+
+                contraseña=document.getElementById("contraseña").value;
+                if(contraseña == ""){
+                    $("#contraseña").after(" Ingresa tu contraseña");
+                }
+
+                correo=document.getElementById("correo").value;
+                if(correo == ""){
+                    $("#correo").after(" Ingresa tu correo");
+                }
+            }
+        </script>
+
+
+        <h2>Prueba de funciones con JQUERY</h2>
+        <div id="formulario">
+            <form action="">
+                <input type="text" id="usuario"> <br>
+                <input type="text" id="contraseña"> <br>
+                <input type="text" id="correo"> <br>
+                <input type="button" value="Enviar" onclick="validar()">
+            </form>
+        </div>
+
+
+
+        <div id="cursos">
+            <a href="#" class="cursos">Enlace 1</a>
+            <a href="#" class="cursos">Enlace 2</a>
+            <a href="#">Enlace 3</a>
+            <a href="#">Enlace 4</a>
+            <a href="#">Enlace 5</a>
+        </div>
+
+
+        <div>
+            <h2>PRUEBAS CON CSS</h2>
+            <ul id="menu">
+                <li><a href="mensajenaara.html">opcion 1</a></li>
+                <li><a href="mensajenaara.html">opcion 2</a></li>
+                <li><a href="mensajenaara.html">opcion 3</a></li>
+                <li><a href="mensajenaara.html">opcion 4</a></li>
+                <li><a href="mensajenaara.html">opcion 5</a></li>
+                <li><a href="mensajenaara.html">opcion 6</a></li>
+            </ul>
+        </div>
+        <script>
+            $(document).ready(function(){
+                //$("a[href^='adiosadios']").addClass("linkdestacaenlaces")
+                document.getElementById("menu").addEventListener("click",resaltacursos, false);
+            })
+
+            function resaltacursos(){
+                $("#cursos").addClass("linkdestacacursos");
+            }
+        </script>
+
+
+        <div>
+            <h2>PRUEBA</h2>
+            <input type="button" value="click aqui"  onclick="prueb()">
+        </div>
+
+        <script>
+            function prueb(){
+                alert("hola");
+            }
+        </script>
+
+        <footer class="pie">
+            Derechos de autor
+        </footer>
+    </div>
+</body>
