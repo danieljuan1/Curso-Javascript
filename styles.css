@@ -193,3 +193,16 @@ h2{
     background-color: rgb(138, 151, 175);
 }
 
+table{
+    text-align: center;
+    background-color: cornsilk;
+    width:25%;
+    margin: auto;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+td{
+    padding: 5px;
+}
+

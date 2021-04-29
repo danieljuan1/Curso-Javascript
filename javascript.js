@@ -26,8 +26,8 @@ function mapa(){
     foto.addEventListener("click", evento, false);
 }
 
-window.onload=mapa;
-
 var anuncio=document.getElementsByClassName("anuncio");
 anuncio.innerHTML="VENDE";
 
+
+window.onload=mapa;

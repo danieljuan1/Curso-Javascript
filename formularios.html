@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <section>
+        <form action="" name="formulario1" id="formulario1" method="GET" autocomplete="on">
+            Email:&nbsp;<input type="email" name="email" id="email">
+            <input type="submit">
+        </form>
+    </section>
+
+    <section>
+        <form action="" name="buscar" id="buscar" method="get" autocomplete="on">
+            Buscar:&nbsp;<input type="search" name="buscar" id="buscar">
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <form action="" name="url" id="url" method="get" autocomplete="on">
+            Url:&nbsp;<input type="url" name="url" id="url">
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <form action="" name="tel" id="tel" method="get" autocomplete="on">
+            Tel:&nbsp;<input type="tel" name="tel" id="tel">
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <form action="" name="numero" id="numero" method="get" autocomplete="on">
+            Edad:&nbsp;<input type="number" min="1" max="100" placeholder="ingresa tu edad" name="numero" id="numero">
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <form action="" name="fecha" id="fecha" method="get" autocomplete="on">
+            Fecha:&nbsp;<input type="date" name="fecha" id="fecha">
+            <input type="submit">
+        </form>
+    </section>
+    <section>
+        <form action="" name="zonahoraria" id="zonahoraria" method="get" autocomplete="on">
+            Zona horaria:&nbsp;<input type="datetime" name="zonahoraria" id="zonahoraria">
+            <input type="submit">
+        </form>
+    </section>
+<br><br><br>
+    <form action="" name="datosUsuario" method="get">
+        <table>
+            <tr><td>Usuario:</td><td><input type="pattern[A-Za-z]{3}" name="usuario" maxlength="10" required id="nombre"></td></tr>
+            <tr><td>Email:</td><td><input type="email" name="email" id="email" required></td></tr>
+            <tr><td>Edad:</td><td><input type="range" min="0" max="120" step="30" value="30" name="edad" id="edad"></td></tr>
+            <tr><td><output id="rango">0 a 30</output></td></tr>
+            <tr><td><input type="submit" id="enviar" value="Registrar"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
